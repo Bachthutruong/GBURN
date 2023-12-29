@@ -2603,7 +2603,7 @@ function App() {
   return /*#__PURE__*/react.createElement(react.Fragment, null, ready ? /*#__PURE__*/react.createElement(wagmi_dist/* WagmiConfig */.eM, {
     client: app_client,
     className: "Index"
-  }, /*#__PURE__*/react.createElement(dist/* HashRouter */.UT, null, /*#__PURE__*/ /*#__PURE__*/react.createElement(react_router_dist/* Routes */.Z5, null, /*#__PURE__*/react.createElement(react_router_dist/* Route */.AW, {
+  }, /*#__PURE__*/react.createElement(dist/* HashRouter */.UT, null, /*#__PURE__*/react.createElement(header, null), /*#__PURE__*/react.createElement(react_router_dist/* Routes */.Z5, null, /*#__PURE__*/react.createElement(react_router_dist/* Route */.AW, {
     exact: true,
     path: "/",
     element: /*#__PURE__*/react.createElement(index, null)
