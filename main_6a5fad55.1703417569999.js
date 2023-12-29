@@ -282,10 +282,8 @@ function Header() {
   }, "\u7B80\u4F53\u4E2D\u6587")))), /*#__PURE__*/react.createElement("div", {
     className: "header-button"
   }, isConnected ? /*#__PURE__*/react.createElement("em", null, address ? address.substring(0, 6) + "..." + address.substr(-4) : '') : /*#__PURE__*/react.createElement("em", {
-    onClick: function onClick() {
-      return ;
-    }
-  }, t('Connect Wallet')))))))), /*#__PURE__*/react.createElement("div", {
+    
+  },))))))), /*#__PURE__*/react.createElement("div", {
     className: "d-md-block d-lg-none"
   }, /*#__PURE__*/react.createElement("div", {
     className: "mean_conter"
@@ -309,7 +307,7 @@ function Header() {
     className: "header-button chain-name chain-m"
   }, /*#__PURE__*/react.createElement("em", {
     onClick: function onClick() {
-      return connectWallet();
+      
     }
   }, t('Connect Wallet')))), /*#__PURE__*/react.createElement("div", {
     className: "mobile-menu mean-container mean-conter"
@@ -329,8 +327,8 @@ function Header() {
       setMenuMShow(!menuMShow);
     }
   }, /*#__PURE__*/react.createElement(dist/* NavLink */.OL, {
-    to: "/"
-  }, t('HOME'))), /*#__PURE__*/react.createElement("span", {
+    to: "/mint"
+  }, t('/mint'))), /*#__PURE__*/react.createElement("span", {
     onClick: function onClick() {
       setMenuMShow(!menuMShow);
     }
@@ -350,11 +348,7 @@ function Header() {
     to: "https://docs.aleox.io/",
     target: "_blank",
     className: "first"
-  }, t('WHITEPAPER')) : /*#__PURE__*/react.createElement(dist/* NavLink */.OL, {
-    to: "https://docs-zh.aleox.io/",
-    target: "_blank",
-    className: "first"
-  }, t('WHITEPAPER'))), /*#__PURE__*/react.createElement("span", {
+  }, ) : /*#__PURE__*/react.createElement(dist/* NavLink */.OL  )), /*#__PURE__*/react.createElement("span", {
     className: "menu_m_lan"
   }, /*#__PURE__*/react.createElement("div", {
     onClick: function onClick() {
@@ -2492,7 +2486,7 @@ var MintView = function MintView() {
     className: "mint_title"
   }, t('The first rune on BSC')), /*#__PURE__*/react.createElement("div", {
     className: "mint_jindu"
-  }, /*#__PURE__*/react.createElement("div", {
+  },  /*#__PURE__*/react.createElement("div", {
     className: "mint_jiflex"
   }, /*#__PURE__*/react.createElement("i", null, "GBURN"), /*#__PURE__*/react.createElement("i", null, t('Fee'), " ", bnbPriceFee, " BNB")), /*#__PURE__*/react.createElement("span", null, /*#__PURE__*/react.createElement("em", {
     style: {
@@ -2525,7 +2519,8 @@ var MintView = function MintView() {
     }
   }, t('Connect Wallet')), /*#__PURE__*/react.createElement("div", {
     style: {
-      height: '50px'
+      height: '50px',
+      marginTop:'-50px'
     }
   })))), showTransaction && /*#__PURE__*/react.createElement(Confirm, {
     childShowTransaction: childShowTransaction,
