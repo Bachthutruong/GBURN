@@ -252,21 +252,11 @@ function Header() {
     className: "container"
   }, /*#__PURE__*/react.createElement("div", {
     className: "nav_container"
-  }, /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("div", {
-    className: "logo"
-  }, /*#__PURE__*/react.createElement(dist/* NavLink */.OL, {
-    to: "/",
-    title: "ALEOX"
-  }, /*#__PURE__*/react.createElement("img", {
-    src: logo_namespaceObject,
-    alt: ""
-  })))), /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("nav", {
+  }, /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("nav", {
     className: "cryptobit_menu"
   }, /*#__PURE__*/react.createElement("ul", {
     className: "nav_scroll"
   }, /*#__PURE__*/react.createElement("li", null, /*#__PURE__*/react.createElement(dist/* NavLink */.OL, {
-    to: "/"
-  }, )), /*#__PURE__*/react.createElement("li", null, /*#__PURE__*/react.createElement(dist/* NavLink */.OL, {
     to: "/mint"
   }, t('MINT'))), /*#__PURE__*/react.createElement("li", null, i18n.language === 'en' ? /*#__PURE__*/react.createElement(dist/* NavLink */.OL, {
     to: "https://docs.aleox.io/",
@@ -275,21 +265,7 @@ function Header() {
   },) : /*#__PURE__*/react.createElement(dist/* NavLink */.OL,t('')))), /*#__PURE__*/react.createElement("div", {
     className: "nav_ico"
   }, /*#__PURE__*/react.createElement("a", {
-  }, /*#__PURE__*/react.createElement("img", {
-    src: feiji_namespaceObject,
-    alt: ""
-  })), /*#__PURE__*/react.createElement("a", null, /*#__PURE__*/react.createElement("img", {
-    src: github_namespaceObject,
-    alt: ""
-  })), /*#__PURE__*/react.createElement("a", null, /*#__PURE__*/react.createElement("img", {
-    src: twimg_namespaceObject,
-    alt: ""
-  }))), /*#__PURE__*/react.createElement("div", {
-    className: "langu_conter"
-  }, /*#__PURE__*/react.createElement("img", {
-    src: lanu_namespaceObject,
-    alt: ""
-  }), ((_i18n$language = i18n.language) == null ? void 0 : _i18n$language.toUpperCase()) === 'EN' && 'EN', ((_i18n$language2 = i18n.language) == null ? void 0 : _i18n$language2.toUpperCase()) === 'ZHCN' && '简体中文', /*#__PURE__*/react.createElement("div", {
+  }, /*#__PURE__*/), /*#__PURE__*, ((_i18n$language = i18n.language) == null ? void 0 : _i18n$language.toUpperCase()) === 'EN' && 'EN', ((_i18n$language2 = i18n.language) == null ? void 0 : _i18n$language2.toUpperCase()) === 'ZHCN' && '简体中文', /*#__PURE__*/react.createElement("div", {
     className: "sub-menu-lang"
   }, /*#__PURE__*/react.createElement("div", {
     className: "sub-menu"
@@ -307,7 +283,7 @@ function Header() {
     className: "header-button"
   }, isConnected ? /*#__PURE__*/react.createElement("em", null, address ? address.substring(0, 6) + "..." + address.substr(-4) : '') : /*#__PURE__*/react.createElement("em", {
     onClick: function onClick() {
-      return connectWallet();
+      return ;
     }
   }, t('Connect Wallet')))))))), /*#__PURE__*/react.createElement("div", {
     className: "d-md-block d-lg-none"
