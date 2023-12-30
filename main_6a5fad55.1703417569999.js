@@ -2536,7 +2536,17 @@ var MintView = function MintView() {
               react.createElement("i", null, "GBURN ", t('Balance'), aleoxBalance),
               /*react.createElement("i", null, t('Ending block height:'), " ", bnbBalance)*/
             ),
-          ),
+          ), 
+          react.createElement("div", {
+              className: "mint_jinblan mint_jinbnbblan"
+            },
+            react.createElement("div", {
+                className: "mint_jiflex"
+              },
+              react.createElement("i", null, "GBURN ", t('Balance'), aleoxBalance),
+              /*react.createElement("i", null, t('Ending block height:'), " ", bnbBalance)*/
+            ),
+          ), 
           react.createElement("input", {
             type: "text",
             style: { 
@@ -2545,6 +2555,10 @@ var MintView = function MintView() {
             },
             onChange: function(event) {
               const inputValue = event.target.value;
+              if (isNaN(inputValue)) {
+                  alert('The input value must be a number');
+                  return; // Dừng xử lý tiếp theo nếu không phải là số
+              }
               if (parseInt(inputValue) > 30) {
                 alert('Each wallet can only mint a maximum of 30 units (taken from the contract)');
               }
