@@ -2242,7 +2242,7 @@ var SwapView = function SwapView() {
 ;// CONCATENATED MODULE: ./public/images/mintBg.png
 const mintBg_namespaceObject = __webpack_require__.p + "1eadb98d621e94290522.png";
 ;// CONCATENATED MODULE: ./public/images/mintBg-m.png
-const mintBg_m_namespaceObject = __webpack_require__.p + "935b562c668807a5a486.png";
+const mintBg_m_namespaceObject = __webpack_require__.p + "1eadb98d621e94290522.png";
 ;// CONCATENATED MODULE: ./src/pages/Mint/index.jsx
 
 
