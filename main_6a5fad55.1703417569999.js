@@ -41,77 +41,77 @@
 
 "use strict";
 
-// EXTERNAL MODULE: ./node_modules/react/index.js
-var react = __webpack_require__(7294);
-// EXTERNAL MODULE: ./node_modules/react-dom/client.js
-var client = __webpack_require__(745);
-// EXTERNAL MODULE: ./node_modules/react-router-dom/dist/index.js
-var dist = __webpack_require__(9655);
-// EXTERNAL MODULE: ./node_modules/react-router/dist/index.js
-var react_router_dist = __webpack_require__(9250);
-// EXTERNAL MODULE: ./node_modules/@ant-design/cssinjs/es/index.js + 27 modules
-var es = __webpack_require__(5990);
-// EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.map.js
-var es_array_map = __webpack_require__(1249);
-// EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.includes.js
-var es_array_includes = __webpack_require__(6699);
-// EXTERNAL MODULE: ./node_modules/core-js/modules/es.string.includes.js
-var es_string_includes = __webpack_require__(2023);
-// EXTERNAL MODULE: ./node_modules/@wagmi/core/dist/chunk-GISSYJN5.js + 5 modules
-var chunk_GISSYJN5 = __webpack_require__(1841);
-// EXTERNAL MODULE: ./node_modules/@wagmi/core/dist/providers/public.js + 1 modules
-var providers_public = __webpack_require__(9528);
-// EXTERNAL MODULE: ./node_modules/lodash/memoize.js
-var memoize = __webpack_require__(8306);
-var memoize_default = /*#__PURE__*/__webpack_require__.n(memoize);
-// EXTERNAL MODULE: ./node_modules/@wagmi/chains/dist/index.mjs
-var chains_dist = __webpack_require__(1407);
-;// CONCATENATED MODULE: ./src/utils/wagmi.ts
-var _configureChains = (0,chunk_GISSYJN5/* configureChains */.QB)([chains_dist/* bsc */.eG
-  //   bscTestnet,
-  ], [(0,providers_public/* publicProvider */.I)()]
-  // [alchemyProvider({ apiKey: AlchemyApiKey }), publicProvider()],
-  ),
-  provider = _configureChains.provider,
-  chains = _configureChains.chains;
+  // EXTERNAL MODULE: ./node_modules/react/index.js
+  var react = __webpack_require__(7294);
+  // EXTERNAL MODULE: ./node_modules/react-dom/client.js
+  var client = __webpack_require__(745);
+  // EXTERNAL MODULE: ./node_modules/react-router-dom/dist/index.js
+  var dist = __webpack_require__(9655);
+  // EXTERNAL MODULE: ./node_modules/react-router/dist/index.js
+  var react_router_dist = __webpack_require__(9250);
+  // EXTERNAL MODULE: ./node_modules/@ant-design/cssinjs/es/index.js + 27 modules
+  var es = __webpack_require__(5990);
+  // EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.map.js
+  var es_array_map = __webpack_require__(1249);
+  // EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.includes.js
+  var es_array_includes = __webpack_require__(6699);
+  // EXTERNAL MODULE: ./node_modules/core-js/modules/es.string.includes.js
+  var es_string_includes = __webpack_require__(2023);
+  // EXTERNAL MODULE: ./node_modules/@wagmi/core/dist/chunk-GISSYJN5.js + 5 modules
+  var chunk_GISSYJN5 = __webpack_require__(1841);
+  // EXTERNAL MODULE: ./node_modules/@wagmi/core/dist/providers/public.js + 1 modules
+  var providers_public = __webpack_require__(9528);
+  // EXTERNAL MODULE: ./node_modules/lodash/memoize.js
+  var memoize = __webpack_require__(8306);
+  var memoize_default = /*#__PURE__*/__webpack_require__.n(memoize);
+  // EXTERNAL MODULE: ./node_modules/@wagmi/chains/dist/index.mjs
+  var chains_dist = __webpack_require__(1407);
+  ;// CONCATENATED MODULE: ./src/utils/wagmi.ts
+  var _configureChains = (0,chunk_GISSYJN5/* configureChains */.QB)([chains_dist/* bsc */.eG
+    //   bscTestnet,
+    ], [(0,providers_public/* publicProvider */.I)()]
+    // [alchemyProvider({ apiKey: AlchemyApiKey }), publicProvider()],
+    ),
+    provider = _configureChains.provider,
+    chains = _configureChains.chains;
 
-var CHAIN_IDS = chains.map(function (c) {
-  return c.id;
-});
-var isChainSupported = memoize_default()(function (chainId) {
-  return CHAIN_IDS.includes(chainId);
-});
-// EXTERNAL MODULE: ./node_modules/wagmi/dist/index.js + 22 modules
-var wagmi_dist = __webpack_require__(2724);
-// EXTERNAL MODULE: ./node_modules/@wagmi/connectors/dist/chunk-2VZS2JHJ.js
-var chunk_2VZS2JHJ = __webpack_require__(6480);
-// EXTERNAL MODULE: ./node_modules/@wagmi/connectors/dist/metaMask.js
-var metaMask = __webpack_require__(5078);
-// EXTERNAL MODULE: ./node_modules/i18next/dist/esm/i18next.js
-var i18next = __webpack_require__(6609);
-// EXTERNAL MODULE: ./node_modules/react-i18next/dist/es/index.js + 15 modules
-var dist_es = __webpack_require__(1072);
-;// CONCATENATED MODULE: ./i18n.ts
+  var CHAIN_IDS = chains.map(function (c) {
+    return c.id;
+  });
+  var isChainSupported = memoize_default()(function (chainId) {
+    return CHAIN_IDS.includes(chainId);
+  });
+  // EXTERNAL MODULE: ./node_modules/wagmi/dist/index.js + 22 modules
+  var wagmi_dist = __webpack_require__(2724);
+  // EXTERNAL MODULE: ./node_modules/@wagmi/connectors/dist/chunk-2VZS2JHJ.js
+  var chunk_2VZS2JHJ = __webpack_require__(6480);
+  // EXTERNAL MODULE: ./node_modules/@wagmi/connectors/dist/metaMask.js
+  var metaMask = __webpack_require__(5078);
+  // EXTERNAL MODULE: ./node_modules/i18next/dist/esm/i18next.js
+  var i18next = __webpack_require__(6609);
+  // EXTERNAL MODULE: ./node_modules/react-i18next/dist/es/index.js + 15 modules
+  var dist_es = __webpack_require__(1072);
+  ;// CONCATENATED MODULE: ./i18n.ts
 
 
 
-const resources = {
-  en: {
-    translation: __webpack_require__(4130),
-  },
-  zhCN: {
-    translation: __webpack_require__(6361),
-  },
-}
-i18next/* default.use */.ZP.use(dist_es/* initReactI18next */.Db).init({
-  resources,
-  // fallbackLng: 'en',
-  lng: "en",
-  // debug: true,
-  // interpolation: {
-  //   escapeValue: false,
-  // },
-})
+  const resources = {
+    en: {
+      translation: __webpack_require__(4130),
+    },
+    zhCN: {
+      translation: __webpack_require__(6361),
+    },
+  }
+  i18next/* default.use */.ZP.use(dist_es/* initReactI18next */.Db).init({
+    resources,
+    // fallbackLng: 'en',
+    lng: "en",
+    // debug: true,
+    // interpolation: {
+    //   escapeValue: false,
+    // },
+  })
 
   /* harmony default export */ const i18n_0 = ((/* unused pure expression or super */ null && (i18n)));
 
@@ -137,7 +137,6 @@ var sessionChainIdAtom = (0,esm/* atom */.cn)(0);
 var useSessionChainId_useSessionChainId = function useSessionChainId() {
   return useAtom(sessionChainIdAtom);
 };
-;// CONCATENATED MODULE: ./src/hook/useWallet.ts
 
 
 
@@ -245,27 +244,36 @@ function Header() {
   var _useState3 = (0,react.useState)(false),
     menuLanuShow = _useState3[0],
     setMenuLanuShow = _useState3[1];
-  return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement("div", {
+  return react.createElement(react.Fragment, null,
+  react.createElement("div", 
+  {
     id: "sticky-header",
     className: "cryptobit_nav_manu"
-  }, /*#__PURE__*/react.createElement("div", {
+  }, 
+  react.createElement("div", {
     className: "container"
-  }, /*#__PURE__*/react.createElement("div", {
-    className: "nav_container"
-  }, /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement("nav", {
-    className: "cryptobit_menu"
-  }, /*#__PURE__*/react.createElement("ul", {
-    className: "nav_scroll"
-  }, /*#__PURE__*/react.createElement("li", null, /*#__PURE__*/react.createElement(dist/* NavLink */.OL, {
-    to: "/mint"
-  }, t('MINT'))), /*#__PURE__*/react.createElement("li", null, i18n.language === 'en' ? /*#__PURE__*/react.createElement(dist/* NavLink */.OL, {
-    to: "https://docs.aleox.io/",
-    target: "_blank",
-    className: "first"
-  },) : /*#__PURE__*/react.createElement(dist/* NavLink */.OL,t('')))), /*#__PURE__*/react.createElement("div", {
-    className: "nav_ico"
-  }, /*#__PURE__*/react.createElement("a", {
-  }, /*#__PURE__*/), /*#__PURE__*, ((_i18n$language = i18n.language) == null ? void 0 : _i18n$language.toUpperCase()) === 'EN' && 'EN', ((_i18n$language2 = i18n.language) == null ? void 0 : _i18n$language2.toUpperCase()) === 'ZHCN' && '简体中文', /*#__PURE__*/react.createElement("div", {
+  }, 
+  react.createElement("div", {
+      className: "nav_container"
+    },
+    react.createElement("div", null,
+      react.createElement("nav", {
+        className: "cryptobit_menu"
+    }, 
+    react.createElement("ul", {
+        className: "nav_scroll"
+      }, 
+      react.createElement("li", null, 
+        react.createElement(dist/* NavLink */.OL, {
+          to: "/mint"
+        }, 
+        t(''))),/*Trong ngoặc để tên header MINT */
+    ),
+    react.createElement("div", {
+        className: "nav_ico"
+      },
+      /*#__PURE__*, ((_i18n$language = i18n.language) == null ? void 0 : _i18n$language.toUpperCase()) === 'EN' && 'EN', ((_i18n$language2 = i18n.language) == null ? void 0 : _i18n$language2.toUpperCase()) === 'ZHCN' && '简体中文', /*#__PURE__*/
+      react.createElement("div", {
     className: "sub-menu-lang"
   }, /*#__PURE__*/react.createElement("div", {
     className: "sub-menu"
@@ -2413,17 +2421,15 @@ var MintView = function MintView() {
     var timer = setInterval(function () {
       handleBalanceData();
     }, 1000);
-    // 清除定时器
     return function () {
       clearInterval(timer);
     };
   });
   (0,react.useEffect)(function () {
     handleBalanceData();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [address]);
 
-  // mint 转账BNB
+  // mint BNB
   var transferClick = /*#__PURE__*/function () {
     var _ref2 = Mint_asyncToGenerator( /*#__PURE__*/Mint_regeneratorRuntime().mark(function _callee2() {
       var gas;
@@ -2470,65 +2476,114 @@ var MintView = function MintView() {
       return _ref2.apply(this, arguments);
     };
   }();
-  return /*#__PURE__*/react.createElement(react.Fragment, null, contextHolder, /*#__PURE__*/react.createElement(Mint_CustomStyle, null, /*#__PURE__*/react.createElement("div", {
-    className: "mint_conterbg"
-  }, /*#__PURE__*/react.createElement("div", {
-    className: "mint_bg"
-  }), /*#__PURE__*/react.createElement("div", {
-    className: "mint_abost"
-  }, !isMobile ? /*#__PURE__*/react.createElement("img", {
-    src: mintBg_namespaceObject,
-    alt: ""
-  }) : /*#__PURE__*/react.createElement("img", {
-    src: mintBg_m_namespaceObject,
-    alt: ""
-  }), /*#__PURE__*/react.createElement("div", {
-    className: "mint_title"
-  }, t('The first rune on BSC')), /*#__PURE__*/react.createElement("div", {
-    className: "mint_jindu"
-  },  /*#__PURE__*/react.createElement("div", {
-    className: "mint_jiflex"
-  }, /*#__PURE__*/react.createElement("i", null, "GBURN"), /*#__PURE__*/react.createElement("i", null, t('Fee'), " ", bnbPriceFee, " BNB")), /*#__PURE__*/react.createElement("span", null, /*#__PURE__*/react.createElement("em", {
-    style: {
-      width: percentage
-    }
-  }))), /*#__PURE__*/react.createElement("div", {
-    className: "mint_jinblan"
-  }, /*#__PURE__*/react.createElement("div", {
-    className: "mint_jiflex"
-  }, /*#__PURE__*/react.createElement("i", null, "BNB ", t('Balance'), " ", bnbBalance))), 
-  /*#__PURE__*/react.createElement("div", {
-    className: "mint_jinblan mint_jinbnbblan"
-  }, /*#__PURE__*/react.createElement("div", {
-    className: "mint_jiflex"
-  }, /*#__PURE__*/react.createElement("i", null, "GBURN ", t('Balance'), aleoxBalance)),
-  /*#__PURE__*/react.createElement("input", { type: "text",style: { 
-      width: '100%', // Đặt chiều rộng gấp đôi so với bình thường
-      marginTop: '10px' // Đặt khoảng cách top giữa input và các thành phần khác
-    } })), address ? 
-  /*#__PURE__*/ react.createElement("div", {
-    className: "mint_bottom",
-    onClick: function onClick() {
-      transferClick();
-    }
-  },
-   !isTransferLoading && /*#__PURE__*/react.createElement("span", null, t('Mint')), isTransferLoading && !showTransaction && /*#__PURE__*/react.createElement("span", null, /*#__PURE__*/react.createElement(Loader_Dots, null, t('Mint')))) : /*#__PURE__*/react.createElement("div", {
-    className: "mint_bottom",
-    onClick: function onClick() {
-      return connect();
-    }
-  }, t('Connect Wallet')), /*#__PURE__*/react.createElement("div", {
-    style: {
-      height: '50px',
-      marginTop:'-50px'
-    }
-  })))), showTransaction && /*#__PURE__*/react.createElement(Confirm, {
+  return /*#__PURE__*/react.createElement(react.Fragment, null, contextHolder, /*#__PURE__*/
+    react.createElement(Mint_CustomStyle, null,
+      react.createElement("div", {
+          className: "mint_conterbg"
+        },
+        react.createElement("div", {
+          className: "mint_bg"
+        }),
+        react.createElement("div", {
+            className: "mint_abost"
+          }, 
+          !isMobile ? react.createElement("img", {
+            src: mintBg_namespaceObject,
+            alt: ""
+          }) : 
+          react.createElement("img", {
+            src: mintBg_m_namespaceObject,
+            alt: ""
+          }), 
+          react.createElement("div", {
+            className: "mint_title"
+            }, 
+            t('The first rune on BSC')
+          ), 
+          react.createElement("div", {
+              className: "mint_jindu"
+            },
+            react.createElement("div", {
+                className: "mint_jiflex"
+              },
+              react.createElement("i", null, "GBURN"),
+              react.createElement("i", null, t('Fee'), " ", bnbPriceFee, " BNB")),
+            /*react.createElement("span", null, react.createElement("em", {
+                  style: {
+                    width: percentage
+                  }
+                }
+              )
+            )
+            */
+          ),
+          react.createElement("div", {
+              className: "mint_jinblan"
+            },
+            react.createElement("div", {
+                className: "mint_jiflex"
+              }, /*#__PURE__*/
+              react.createElement("i", null, "BNB ", t('Balance'), " ", bnbBalance),
+              /*react.createElement("i", null, t('Starting block height:'), " ", bnbBalance)*/
+            )
+          ), 
+          react.createElement("div", {
+              className: "mint_jinblan mint_jinbnbblan"
+            },
+            react.createElement("div", {
+                className: "mint_jiflex"
+              },
+              react.createElement("i", null, "GBURN ", t('Balance'), aleoxBalance),
+              /*react.createElement("i", null, t('Ending block height:'), " ", bnbBalance)*/
+            ),
+          ),
+          react.createElement("input", {
+            type: "text",
+            style: { 
+              width: '55%', 
+              marginTop: '40px',
+            },
+            onChange: function(event) {
+              const inputValue = event.target.value;
+              if (parseInt(inputValue) > 30) {
+                alert('Each wallet can only mint a maximum of 30 units (taken from the contract)');
+              }
+            }
+          }),
+          address ? 
+            react.createElement("div", {
+                className: "mint_bottom",
+                  onClick: function onClick() {
+                    transferClick();
+                  }
+              },
+              !isTransferLoading && react.createElement("span", null, t('Mint')), isTransferLoading && !showTransaction && 
+              react.createElement("span", null, 
+                  react.createElement(Loader_Dots, null, t('Mint'))
+              )
+            ) : react.createElement("div", {
+                    className: "mint_bottom",
+                    onClick: function onClick() {
+                      return connect();
+                    }
+                  }, 
+                  t('Connect Wallet')
+                ), 
+                react.createElement("div", {
+                    style: {
+                      height: '50px',
+                      marginTop:'-30px'
+                    }
+                  }
+                )
+        )
+      )
+    ), showTransaction && /*#__PURE__*/react.createElement(Confirm, {
     childShowTransaction: childShowTransaction,
     hashTransaction: transactionHash
   }));
 };
 const Mint = (MintView);
-;// CONCATENATED MODULE: ./src/pages/app.jsx
 
 
 
@@ -2569,12 +2624,11 @@ function App() {
   (0,react.useEffect)(function () {
     setReady(true);
   }, []);
-  // console.log('chains===>', chains)
-
-  return /*#__PURE__*/react.createElement(react.Fragment, null, ready ? /*#__PURE__*/react.createElement(wagmi_dist/* WagmiConfig */.eM, {
+  return /*#__PURE__*/react.createElement(react.Fragment, null, ready ?
+    react.createElement(wagmi_dist.eM, {
     client: app_client,
     className: "Index"
-  }, /*#__PURE__*/react.createElement(dist/* HashRouter */.UT, null, /*#__PURE__*/react.createElement(header, null), /*#__PURE__*/react.createElement(react_router_dist/* Routes */.Z5, null, /*#__PURE__*/react.createElement(react_router_dist/* Route */.AW, {
+  }, /*#__PURE__*/react.createElement(dist/* HashRouter */.UT, null, react.createElement(react_router_dist/* Routes */.Z5, null, /*#__PURE__*/react.createElement(react_router_dist/* Route */.AW, {
     exact: true,
     path: "/",
     element: /*#__PURE__*/react.createElement(index, null)
